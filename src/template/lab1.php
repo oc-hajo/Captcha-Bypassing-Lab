@@ -1,3 +1,6 @@
+<?php
+session_start();?>
+
 <form name="form" method="post" action="">
   <label>Enter Captcha:</label><br/>
   <input type="text" name="captcha" />
@@ -27,7 +30,6 @@
 </script>
 
 <?php
-session_start();
 $status = '';
 
 if (isset($_POST['captcha']) && ($_POST['captcha'] != "")) {

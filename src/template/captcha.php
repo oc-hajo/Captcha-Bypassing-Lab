@@ -11,7 +11,7 @@ $total_characters_on_image = 6;
 // The characters that can be used in the CAPTCHA code.
 // avoid all confusing characters and numbers (i.e l, 1 and i)
 $possible_captcha_letters = 'bcdfghjkmnpqrstvwxyz23456789';
-$captcha_font = '/home/d3ext/Desktop/repos/Captcha-Bypassing/template/monofont.ttf';
+$captcha_font = '/var/www/html/monofont.ttf';
 
 // Edit this value to add dots to the captcha image
 $random_captcha_dots = 0;
@@ -88,8 +88,8 @@ $text_box = imagettfbbox(
   $captcha_code
 );
 
-$x = ($captcha_image_width - $text_box[4])/2;
-$y = ($captcha_image_height - $text_box[5])/2;
+$x = (int) (($captcha_image_width - $text_box[4])/2);
+$y = (int) (($captcha_image_height - $text_box[5])/2);
 
 imagettftext(
   $captcha_image,
