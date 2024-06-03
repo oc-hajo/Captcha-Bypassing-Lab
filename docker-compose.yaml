@@ -3,5 +3,5 @@ services:
     captcha-bypass:
       build: .
       ports:
-        - "80:80"
+        - "1234:80"
       restart: always
