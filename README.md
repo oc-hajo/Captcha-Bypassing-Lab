@@ -17,9 +17,8 @@ To launch the lab you just need a php server and in order to generate the captch
 Clone the repo and set up a php server on the lab folder
 
 ```sh
-git clone https://github.com/D3Ext/Captcha-Bypassing-Lab
-cd Captcha-Bypassing-Lab/template
-php -S 0.0.0.0:80
+docker-compose build
+docker-compose up
 ```
 
 ## Solution
